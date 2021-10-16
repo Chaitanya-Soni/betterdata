@@ -10,7 +10,7 @@ def increment_model_number():
   return "Model-"+str(total+1)
 
 class project(models.Model):
-    proj = models.CharField(max_length = 20, default = increment_project_number)
+    proj = models.CharField(max_length = 20)
     def __str__(self):
         return self.proj
 
